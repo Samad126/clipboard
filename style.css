@@ -1,0 +1,330 @@
+/* General Part */
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url(images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+button {
+    border: none;
+    border-radius: 35px;
+    padding: 10px 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(210, 10%, 33%);
+    margin: 0;
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    margin: 0 auto;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.feature {
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.tool {
+    width: 20%;
+}
+
+/* Header Part */
+
+header > p {
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.button1 {
+    background-color: hsl(171, 66%, 44%);
+    margin-right: 10px;
+}
+
+.button1:hover, .button2:hover {
+    opacity: 60%;
+}
+
+.button2 {
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* Main Part */
+
+main {
+    text-align: center;
+}
+
+/* Snippets Part */
+
+.snippets > p {
+    width: 35%;
+}
+
+/* Computer Part */
+
+.computer {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    position: relative;
+    left: -100px;
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.computer img {
+    margin-right: 100px;
+}
+
+/* Clipboard Part */
+
+.clipboard p {
+    margin-bottom: 100px;
+    width: 40%;
+}
+
+/* Workflow Part */
+
+.workflow p {
+    margin-bottom: 60px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    margin-bottom: 100px;
+}
+
+.tool {
+    width: 30%;
+}
+
+/* Companie Part */
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+    margin-bottom: 100px;
+}
+
+.companies img {
+    height: 35px;
+}
+
+.download2 {
+    margin-bottom: 100px;
+}
+
+.download2 p {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+/* Footer Part */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+    padding: 20px 100px;
+}
+
+.amargin {
+    margin-bottom: 10px;
+}
+
+.amargin:hover, .amargin2:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+footer img {
+    width: 50px;
+}
+
+.footer1 {
+    width: 10%;
+}
+
+.footer2 {
+    width: 10%;
+}
+
+.footer3 {
+    width: 40%;
+}
+
+.footer1, .footer2, .footer3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons a {
+    margin-right: 10px;
+}
+
+.icons a:hover svg path {
+    fill: hsl(171, 66%, 44%);
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+
+/* Responsibility */
+
+@media screen and (min-width:1401px) {
+    .computer img {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1200px){
+    .computer img {
+        width: 500px;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    .clipboard img {
+        width: 500px;
+    }
+
+    .tools {
+        padding: 0 50px;
+    }
+
+    .companies {
+        padding: 0 20px;
+    }
+
+    footer {
+        padding: 20px 50px;
+    }
+
+    .footer1 {
+        width: 20%;
+    }
+
+    .footer2 {
+        width: 20%;
+    }
+
+    .footer3 {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .computer {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .computer img {
+        width: 50%;
+        margin: 0 0 40px 0;
+    }
+
+    .clipboard img {
+        width: 40%;
+    }
+
+    .clipboard p {
+        width: 90%;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .tools {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .companies {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .snippets > p, .download2 p, header > p {
+        width: 80%;
+    }
+
+    .companies img {
+        width: 100px;
+        height: 100%;
+        margin-top: 70px;
+    }
+
+    .tool {
+        width: 100%;
+    }
+
+    .button1 {
+        margin: 0 0 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer1, .footer2, .footer3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .amargin2 {
+        margin-bottom: 10px;
+    }
+}
